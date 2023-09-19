@@ -1,6 +1,14 @@
 package nam.week_2;
 
 public class DummyTel {
+    /**
+     * 
+     * @param hour call hour
+     * @param minute call minute
+     * @param second call second
+     * @param duration duration of the call
+     * @return total cost of the call
+     */
     public static double totalCost(int hour, int minute, int second, int duration) {
         if (hour > 24 || minute > 60 || second > 60) {
             return -1;
@@ -20,14 +28,14 @@ public class DummyTel {
 
         initialCost = initialCost * 1.05;
 
-        return initialCost;
+        return Double.parseDouble(String.format("%.2f", initialCost));
     }
 
     public static void main(String[] args) {
-        int hour = 10;
-        int minute = 30;
+        int hour = 18;
+        int minute = 15;
         int second = 0;
-        int duration = 5;
+        int duration = 70;
 
         System.out.println(totalCost(hour, minute, second, duration));
     }
