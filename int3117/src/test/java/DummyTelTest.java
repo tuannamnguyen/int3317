@@ -1,8 +1,8 @@
-package week_2;
+
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static nam.week_2.DummyTel.totalCost;
+import static nam.DummyTel.totalCost;
 
 public class DummyTelTest {
     @Test

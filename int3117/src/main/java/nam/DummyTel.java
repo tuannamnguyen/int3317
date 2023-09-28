@@ -1,4 +1,4 @@
-package nam.week_2;
+package nam;
 
 public class DummyTel {
     /**
